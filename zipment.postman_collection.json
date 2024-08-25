@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "cf4b0bd8-3021-4b72-b3b3-a4985a1e90b5",
+		"name": "Task_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31826384"
+	},
+	"item": [
+		{
+			"name": "calculate-price",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dGVzdDQ0NDo5OTgxMDBjN2QxODAwMGE2YWY3MzhkOTE1M2I3NzA2M2M4NGZkODU2N2EwZDE4NzkxZGFhY2Q5MDBjN2JiOWU4YWJjM2ViMzhkNWFkOWM1ZGZjNDcyMzdkNDNkNDIxODEwOWEwYTk0M2YwNmU2OWM2YWFjN2E2Y2VhMDlh",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"addresses\": [\n        {\n            \"country\": \"DE\",\n            \"zip\": \"40210\",\n            \"city\": \"Düsseldorf\"\n        },\n        {\n            \"country\": \"DE\",\n            \"zip\": \"01067\",\n            \"city\": \"Dresden\"\n        }\n    ] \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/calculate-price",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"calculate-price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic 86ecfba73a927348f66428a4028c854bdd990ea6584ca71b955541aed5f2087ccb95e3a401fbdb18f3625d70d15244ce8e0627e6252c42ea5a05d668ec70",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"test444\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
